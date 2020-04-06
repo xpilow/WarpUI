@@ -86,7 +86,7 @@ class WarpUI extends PluginBase implements Listener{
             if($result === null){
                 return true;
             }
-             if($result = 0){    $sender->sendMessage("Plugin buatan §aRezaG");
+            if($result = 0){    $sender->sendMessage("Plugin buatan §aRezaG");
                  return true;
              }
              if($result = 1){    $this->World($sender);
@@ -106,38 +106,38 @@ class WarpUI extends PluginBase implements Listener{
              }
              if($result = 6){    $this->Games($sender);  
                  return true;
-            }
-            });
-            $name = $sender->getName();
-            $online = count($this->getServer()->getOnlinePlayers());
-            $max = $this->getServer()->getMaxPlayers();
-            $location = count($sender->getLevel()->getPlayers());
-            $world = $sender->getLevel()->getName();
-            $ping = $sender->getPing();
-            $tps = $sender->getServer()->getTicksPerSecond();
-            $wolf = $this->getServer()->getLevelByName("world");
-            $spawn = count($wolf->getPlayers());
-            $sheep = $this->getServer()->getLevelByName("lobby");
-            $lobby = count($sheep->getPlayers());
-            $gook = $this->getServer()->getLevelByName("survival");
-            $survival = count($gook->getPlayers());
-            $miaw = $this->getServer()->getLevelByName("mine");
-            $mine = count($miaw->getPlayers());
-            $myplot = $this->getServer()->getLevelByName("plot");
-            $plot = count($myplot->getPlayers());
-            $mgames = $this->getServer()->getLevelByName("games");
-            $games = count($mgames->getPlayers());
-            $form->setTitle("§5§kiii§r§eWarpUI §f| §aReza2175§5§kiii§r");
-            $form->addDropdown("§b++++++++++++++++§e+§d++++++++++++++++\n§eHallo, §a{$name}\n §aOnline §e: §b{$online}\n §aMax Online §e: §b{$max}\n §aPlayers §e: §b{$location}\n §aSinyal §e: §b{$ping}\n §aTPS §e: §b{$tps}\n §aKamu Berada Di §e: §b{$world}\n§b++++++++++++++++§e+§d++++++++++++++++\n§rChoose World:", [
-                "§rPilih tujuan anda",
-                "§bWorld §ePlayers §a: §b$spawn",
-                "§bLobby §ePlayers §a: §b$lobby",
-                "§bSurvival §ePlayers §a: §b$survival",
-                "§bMining §ePlayers §a: §b$mine",
-                "§bMyPlot §ePlayers §a: §b$plot",
-                "§bMini Games §ePlayers §a: §b$games"
-                ]);
-            $form->sendToPlayer($sender);
+             }
+             });
+             $name = $sender->getName();
+             $online = count($this->getServer()->getOnlinePlayers());
+             $max = $this->getServer()->getMaxPlayers();
+             $location = count($sender->getLevel()->getPlayers());
+             $world = $sender->getLevel()->getName();
+             $ping = $sender->getPing();
+             $tps = $sender->getServer()->getTicksPerSecond();
+             $wolf = $this->getServer()->getLevelByName("world");
+             $spawn = count($wolf->getPlayers());
+             $sheep = $this->getServer()->getLevelByName("lobby");
+             $lobby = count($sheep->getPlayers());
+             $gook = $this->getServer()->getLevelByName("survival");
+             $survival = count($gook->getPlayers());
+             $miaw = $this->getServer()->getLevelByName("mine");
+             $mine = count($miaw->getPlayers());
+             $myplot = $this->getServer()->getLevelByName("plot");
+             $plot = count($myplot->getPlayers());
+             $mgames = $this->getServer()->getLevelByName("games");
+             $games = count($mgames->getPlayers());
+             $form->setTitle("§5§kiii§r§eWarpUI §f| §aReza2175§5§kiii§r");
+             $form->addDropdown("§b++++++++++++++++§e+§d++++++++++++++++\n§eHallo, §a{$name}\n §aOnline §e: §b{$online}\n §aMax Online §e: §b{$max}\n §aPlayers §e: §b{$location}\n §aSinyal §e: §b{$ping}\n §aTPS §e: §b{$tps}\n §aKamu Berada Di §e: §b{$world}\n§b++++++++++++++++§e+§d++++++++++++++++\n§rChoose World:", [
+                 "§rPilih tujuan anda",
+                 "§bWorld §ePlayers §a: §b$spawn",
+                 "§bLobby §ePlayers §a: §b$lobby",
+                 "§bSurvival §ePlayers §a: §b$survival",
+                 "§bMining §ePlayers §a: §b$mine",
+                 "§bMyPlot §ePlayers §a: §b$plot",
+                 "§bMini Games §ePlayers §a: §b$games"
+                 ]);
+             $form->sendToPlayer($sender);
     }
     
     public function World($sender){
