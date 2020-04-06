@@ -1,0 +1,13 @@
+name: WarpUI
+main: xpilow\WarpUI
+version: 1.14.0
+api: 3.0.0
+author: xpilow
+
+commands:
+  warpui:
+    description: Open your WarpUI teleport in world new
+    permission: warp.ui
+    
+  warpinfo:
+    description: List Info Sosial Media Author
